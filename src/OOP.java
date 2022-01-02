@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class OOP {
 // Four basic pillars Abstraction, Polymorphism, Inheritance, and Encapsulation.
 
@@ -37,9 +42,28 @@ public class OOP {
 
 
 	public static void main(String[] args) {
+		MultiThread myThread = new MultiThread();
+
 	System.out.println(add(1,2));
 	Car car1 = new Car("Honda", "Civic", 1994 );
 	Car car3 = new Car("Acura", "Integra", 1996);
+//	Hashset
+	Set<String> set = new HashSet<String>();
+	set.add("Cat");
+	set.add("Dog");
+		System.out.println(set);
+		set.add("Bird");
+		set.add("Cat");
+		System.out.println(set);
+//	Hashmap <Key, Value>
+	Map<String, String> map = new HashMap<String, String>();
+	map.put("Name", "Ian");
+	map.put("Location", "Texas");
+		System.out.println();
+		System.out.println(map);
+		System.out.println();
+		System.out.println();
+
 		Car car2 = new Car(car1);
 		System.out.println(car1);
 		System.out.println(car2);
@@ -52,6 +76,7 @@ public class OOP {
 		System.out.println(car2.getModel());
 		System.out.println(car2.getYear());
 		System.out.println();
+		myThread.start();
 	}
 }
 

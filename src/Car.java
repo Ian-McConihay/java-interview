@@ -1,4 +1,4 @@
-public class Car {
+public class Car implements Cloneable{
 	private String make;
 	private String model;
 	private int year;
@@ -11,6 +11,19 @@ public class Car {
 	Car(Car x){
 		this.copy(x);
 	}
+
+	public Car() {
+
+	}
+
+	public Car clone(){
+				Car carClone = new Car();
+				carClone.make = this.make;
+				carClone.model = this.model;
+				carClone.year = this.year;
+				return carClone;
+		}
+
 	public String getMake() {
 		return make;
 	}
