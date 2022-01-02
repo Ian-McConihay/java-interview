@@ -37,13 +37,15 @@ public class OOP {
 //		}
 //}
 
-
-
-
-
+//What is psvm?
+// 	Public so the method can be callable outside the class
+// 	Static doesn't need an instance
+//	Void returns nothing it just runs and ends
+//	Main is just named main so it will work
+//	String[] args Array of string arguments
 	public static void main(String[] args) {
 		MultiThread myThread = new MultiThread();
-
+//		System.out.println(args[0]);
 	System.out.println(add(1,2));
 	Car car1 = new Car("Honda", "Civic", 1994 );
 	Car car3 = new Car("Acura", "Integra", 1996);
@@ -77,6 +79,13 @@ public class OOP {
 		System.out.println(car2.getYear());
 		System.out.println();
 		myThread.start();
+
+
+
+
+
+
+
 	}
 }
 
