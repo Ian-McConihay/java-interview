@@ -17,4 +17,8 @@ public class ReverseString {
 
 		return out.toString();
 	}
+//	Strings are immutable so using a builder or a buffer
+
+//	Stringbuilder is a string object that can be manipulated
+
 }
