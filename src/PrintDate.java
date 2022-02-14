@@ -1,4 +1,5 @@
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class PrintDate {
@@ -7,7 +8,9 @@ public class PrintDate {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
 		String date = simpleDateFormat.format(new Date());
+		Calendar datetwo = simpleDateFormat.getCalendar();
 		System.out.println(date);
+		System.out.println(datetwo);
 
 	}
 }
